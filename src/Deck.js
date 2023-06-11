@@ -34,16 +34,12 @@ const Deck = () => {
         NewID()
     }, [needDeck])
 
-    console.log(deckCount)
-
     return (
         <div>
             <Card deckID={ deckID.current } deckCount={ deckCount } />
             <button onClick={ countCard }>Flip Card</button>
             <button onClick={ getNewDeck }>New Deck</button>
         </div>
-
-        
     )
 }
 export default Deck
